@@ -115,7 +115,7 @@ void FileSystemFilter::accept(FilterEntry selection) const
         return;
     }
     EditorManager::openEditor(selection.internalData.toString(), Id(),
-                              EditorManager::CanContainLineNumber);
+                              EditorManager::CanContainLineAndColumnNumber);
 }
 
 bool FileSystemFilter::openConfigDialog(QWidget *parent, bool &needsRefresh)

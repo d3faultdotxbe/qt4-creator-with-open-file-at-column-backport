@@ -133,7 +133,7 @@ public:
     enum OpenFilesFlags {
         None = 0,
         SwitchMode = 1,
-        CanContainLineNumbers = 2,
+        CanContainLineAndColumnNumbers = 2,
          /// Stop loading once the first file fails to load
         StopOnLoadFail = 4
     };

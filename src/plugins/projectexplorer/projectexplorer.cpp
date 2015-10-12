@@ -1600,7 +1600,7 @@ void ProjectExplorerPlugin::restoreSession()
 void ProjectExplorerPlugin::restoreSession2()
 {
     QApplication::processEvents(QEventLoop::ExcludeUserInputEvents);
-    Core::ICore::openFiles(d->m_arguments, Core::ICore::OpenFilesFlags(Core::ICore::CanContainLineNumbers | Core::ICore::SwitchMode));
+    Core::ICore::openFiles(d->m_arguments, Core::ICore::OpenFilesFlags(Core::ICore::CanContainLineAndColumnNumbers | Core::ICore::SwitchMode));
 }
 
 void ProjectExplorerPlugin::loadSession(const QString &session)

@@ -106,5 +106,5 @@ void OpenDocumentsFilter::refresh(QFutureInterface<void> &future)
 void OpenDocumentsFilter::accept(FilterEntry selection) const
 {
     EditorManager::openEditor(selection.internalData.toString(), Id(),
-                              EditorManager::CanContainLineNumber);
+                              EditorManager::CanContainLineAndColumnNumber);
 }
